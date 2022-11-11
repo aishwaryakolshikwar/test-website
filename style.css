@@ -1,0 +1,39 @@
+p{
+    color: blueviolet;
+    font-style: italic;
+}
+h1, h5, h6{
+    color: red;
+    font-style:italic;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#title{
+    font-style: normal;
+    background-color: rgb(42, 104, 165);
+}
+.information{
+    color: rgb(80, 207, 17);
+    font-style: initial;
+}
+.dp{
+    width: 300px;
+    height: 200px;
+}
+#staffTable{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+#staffTable td, #staffTable th{
+    border: 1px solid rgb(26, 25, 24);
+    padding: 20px,100px,20px,100px;
+    font-size: medium;
+
+}
+#staffTable th{
+    background-color: rgb(42, 104, 165);
+    color: azure;
+}

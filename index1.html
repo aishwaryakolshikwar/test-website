@@ -1,0 +1,134 @@
+<!DocType html>
+<html>
+
+<head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+    <script src="jQuery.js"></script>
+    <ul>
+        <li> NTR <a href="http://google.com" target="_blank">Google</a></li>
+        <li>samantha</li>
+        <li>Alia</li>
+        <li>Ranbir Kapoor</li>
+    </ul>
+    <!-- 1 -->
+    <p>I AM AISHWARYA KOLSHIKWAR </p>
+    <input id="press" type="text"> </input>
+    <script>
+        $(document).ready(function () {
+            $("#press").on("keypress", function () {
+                $("p:last").hide();
+            });
+        });
+    </script>
+    <!--
+       <script>
+        let design={color:"blue",background:"pink", border:"10"}
+       </script>
+       -->
+    <!-- 2 -->
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <div class="pics">
+        <img src="straw.jpg" />
+        <img src="bg2.jpg" />
+        <img src="bg.jpg" />
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("img").hide();
+            });
+            $("#show").click(function () {
+                $("img").show();
+            });
+        });
+    </script>
+    <!-- 3 -->
+    <label>first_name</label>
+    <input type="Text" id="sometext"></input>
+    <button>submit</button>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("img").addClass("styleclass");
+            });
+        });
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("img").click(function () {
+                    $(this).hide();<!--hide image-->
+                });
+            });
+        });
+    </script>
+
+    <button> try addClass()</button>
+    <!-- 4 -->
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                alert("value: " + $("#sometext").val());
+            });
+        });
+    </script>
+    <!--- 5 -->
+    <button>Byeeeee!</button>
+    <div class="pics">
+        <img id="one" src="straw.jpg" />
+        <img id="two" src="bg2.jpg" />
+        <img id="three" src="bg.jpg" />
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#one").fadeOut("slow");
+                $("#two").fadeOut("slow");
+                $("#three").fadeOut("fast");
+            });
+        });
+    </script>
+    <!-- 6 -->
+
+    <button id="hi">Namaste!</button>
+    <script>
+        $(document).ready(function () {
+            $("#hi").click(function () {
+                $("#1").fadeIn();
+                $("#2").fadeIn("slow");
+                $("#3").fadeIn(3000);
+            });
+        });
+    </script>
+
+    <div class="fade">
+        <div id="1" style="width:2200;height:60px;display:none;background-color:rgb(248, 167, 16)"></div>
+        <div id="2" style="width:2200;height:60px;display:none;background-color:rgb(185, 200, 236)"></div>
+        <div id="3" style="width:2200;height:60px;display:none;background-color:rgb(70, 236, 20)"></div><br>
+    </div>
+    <!-- 7 -->
+    <button id="hello">slide!</button>
+    <div id="11" style="width:60px;height:60px;Display:none;background-color:rgb(51, 49, 44)"></div>
+    <script>
+        $(document).ready(function () {
+            $("#hello").on("click", function () {
+                $("#11").slideDown("slow");
+
+            });
+        });
+    </script>
+    <!-- 8 -->
+  
+<!-- 9 -->
+<input id="date" type="text"size="10" >
+<script>
+    $("#date").datepicker()
+</script>
+
+</body>
+
+</html>
